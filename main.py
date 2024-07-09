@@ -69,7 +69,7 @@ if train_dqn:
         for _ in range(max_steps):
             #! Choose an action (Exploration vs. Exploitation)
             a = q_net.sample_action(torch.from_numpy(s).float(), epsilon)
-            s_prime, r, done, _, _ = env.step(a)
+            s_prime, r, done, _ = env.step(a)
 
             done_mask = 0.0 if done else 1.0
 
