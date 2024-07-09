@@ -23,12 +23,12 @@ no_states = 2
 
 # Hyperparameters:
 # ----------------
-learning_rate = 0.005
+learning_rate = 0.009
 gamma = 0.98
 buffer_limit = 50_000
 batch_size = 32
 num_episodes = 10_000
-max_steps = 10_0
+max_steps = 10_00
 
 
 goal_coordinates = (5, 5)
